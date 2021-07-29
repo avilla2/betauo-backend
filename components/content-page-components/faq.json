@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_page_components_faqs",
+  "info": {
+    "name": "FAQ",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Entry": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq-components.faq-entry"
+    }
+  }
+}

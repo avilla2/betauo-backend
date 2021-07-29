@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_pages",
+  "info": {
+    "name": "Content Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Link": {
+      "type": "string",
+      "regex": "^\\/[\\w-]+",
+      "required": true,
+      "unique": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "content-page-components.paragraph",
+        "content-page-components.faq"
+      ]
+    }
+  }
+}
